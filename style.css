@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    background: black;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #FF004D;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    text-indent: 120px;
+    font-size: 20px;
+    font-family: "Syne", sans-serif;
+    font-weight: bold;
+    margin-left: 17%;
+}
+.nav ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.home img{
+    width: 400px;
+    height: 550px;
+    object-fit: contain;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+.text1 h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 64px;
+    color: white;
+    margin-top: -30%;
+    margin-left: 50%; 
+}
+.text1 .highlight{
+    color: #FF004D;
+}
+.text1 .highlight:hover{
+    color: #F8DE22;
+}
+.text1 p{
+    font-family: "Questrial", sans-serif;
+    color: white;
+    padding-right: 18%;
+    margin-left: 50.5%;
+    margin-top: -2.5%;
+    text-align: justify;
+    line-height: 160%;
+    font-size: 18px;
+}
+.icon img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.icon img:hover{
+    background-color: #FF004D;
+    border-radius: 20px;
+}
+.icon{
+    margin-top: -0px;
+    object-fit: contain;
+}
+.icon .facebook{
+    margin-left: 900px;
+}
+.icon .github{
+    margin-left: 40px;
+}
+.icon .linkedin{
+    margin-left: 40px;
+}
+.project{
+    height: 150vh;
+}
+.project1 h2{
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-left: 48%;
+    position: absolute;
+}
+.project1 h1{
+    color: #F8DE22;
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 21%;
+    position: absolute;
+}
+.project1 img{
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.project1 p{
+    color: white;
+    font-family: "Questrial", sans-serif;
+    line-height: 160%;
+    font-size: 18px;
+    padding-right: 14%;
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 23%;
+    text-align: justify;
+}
+.project1 .p1{
+    width: 578px;
+    height: 262.64px;
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 25%;
+    background: transparent;
+}
+.project1 .p2{
+    width: 578px;
+    height: 262.64px;
+    position: absolute;
+    margin-top: 50.5%;
+    margin-left: 39.5%;
+    background: transparent;
+}
+.project1 .p3{
+    width: 578px;
+    height: 262.64px;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 69%;
+    background: transparent;
+}
+.project1 .p4{
+    width: 134px;
+    height: 262.64px;
+    position: absolute;
+    margin-top: 32%;
+    object-fit: contain;
+    margin-left: 64.5%;
+    background: transparent;
+}
+.project1 .p5{
+    width: 134px;
+    height: 262.64px;
+    position: absolute;
+    margin-left: 29.2%;
+    object-fit: contain;
+    margin-top: 50.5%;
+    background: transparent;
+}
+.project1 .p6{
+    width: 134px;
+    height: 262.64px;
+    position: absolute;
+    margin-left: 64.5%;
+    margin-top: 69%;
+    object-fit: contain;
+    background: transparent;
+}
+.project2 h1{
+    color: white;
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 21%;
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #F8DE22;
+}
+.project2 p{
+    color: white;
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 94%;
+    font-family: "Questrial", sans-serif;
+    line-height: 160%;
+    font-size: 18px;
+    padding-right: 14%;
+    text-align: justify;
+}
+.project2 h2{
+    color: #FF004D;
+    position: absolute;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 106%;
+    margin-left: 45%;
+}
+.project2 img{
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.project2 .p1{
+    width: 275px;
+    height: 310px;
+    position: absolute;
+    margin-top: 111%;
+    margin-left: 25.5%;
+}
+.project2 .p2{
+    width: 590px;
+    height: 350px;
+    margin-top: 111%;
+    margin-left: 46%;
+}
+.project2 .p3{
+    width: 590px;
+    height: 350px;
+    margin-top: 1.5%;
+    margin-left: 36%;
+}
+.project2 h3{
+    color: #FF004D;
+    position: absolute;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 44%;
+}
+.project2 .p4{
+    width: 590px;
+    height: 350px;
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.project2 .p5{
+    position: absolute;
+    width: 590px;
+    height: 350px;
+    margin-top: 18%;
+    margin-left: -25%;
+}
+.project2 .p6{
+    width: 590px;
+    height: 350px;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -10%;
+}
+.project3 h1{
+    color: #F8DE22;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Syne", sans-serif;
+    margin-top: 27%;
+    margin-left: 21%;
+}
+.project3 p{
+    color: white;
+    position: absolute;
+    font-family: "Questrial", sans-serif;
+    line-height: 160%;
+    font-size: 18px;
+    padding-right: 14%;
+    text-align: justify;
+    margin-top: 31.5%;
+    margin-left: 23%;
+    background: transparent;
+}
+.project3 img{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.project3 .p1{
+    width: 597px;
+    height: 290px;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 23%;
+}
+.project3 .p2{
+    width: 597px;
+    height: 290px;
+    position: absolute;
+    margin-top: 56%;
+    margin-left: 45%;
+}
+.project3 .p3{
+    width: 597px;
+    height: 290px;
+    position: absolute;
+    margin-top: 73%;
+    margin-left: 23%;
+}
+.project3 .p4{
+    width: 597px;
+    height: 290px;
+    position: absolute;
+    margin-top: 90%;
+    margin-left: 45%;
+}
+.project3 .p5{
+    width: 597px;
+    height: 290px;
+    position: absolute;
+    margin-top: 107%;
+    margin-left: 23%;
+}
+.skill h1{
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 245%;
+    margin-left: 48%;
+}
+.skill img{
+    width: 90px;
+    height: 90px;
+}
+.skill .p1{
+    position: absolute;
+    margin-top: 250%;
+    margin-left: 34%;
+}
+.skill .p2{
+    position: absolute;
+    margin-top: 250%;
+    margin-left: 44%;
+}
+.skill .p3{
+    position: absolute;
+    margin-top: 250%;
+    margin-left: 54%;
+}
+.skill .p4{
+    position: absolute;
+    margin-top: 250%;
+    margin-left: 64%;
+}
+.skill .p5{
+    position: absolute;
+    margin-top: 259%;
+    margin-left: 39%;
+}
+.skill .p6{
+    position: absolute;
+    margin-top: 259%;
+    margin-left: 49%;
+}
+.skill .p7{
+    position: absolute;
+    margin-top: 259%;
+    margin-left: 59%;
+}
+.skill .p8{
+    position: absolute;
+    margin-top: 268%;
+    margin-left: 44%;
+}
+.skill .p9{
+    position: absolute;
+    margin-top: 268%;
+    margin-left: 54%;
+}
+.contact h1{
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 280%;
+    margin-left: 47%;
+    background: transparent;
+}
+.contact{
+    height: 650vh;
+}
+.contact p{
+    color: white;
+    font-family: "Syne", sans-serif;
+    font-size: 28px;
+    position: absolute;
+    margin-top: 285%;
+    margin-left: 18%;
+    background: transparent;
+}
+.contact .fname{
+    color: white;
+    position: absolute;
+    margin-top: 288%;
+    margin-left: 18.5%;
+    font-size: 24px;
+    background: black;
+    border: 1px solid white;
+    padding: 13px 160px 10px 5px;
+    font-size: 18px;
+    font-family: "Questrial",sans-serif;
+}
+.contact .email{
+    color: white;
+    position: absolute;
+    margin-top: 291.5%;
+    margin-left: 18.5%;
+    font-size: 24px;
+    background: black;
+    border: 1px solid white;
+    padding: 13px 160px 10px 5px;
+    font-size: 18px;
+    font-family: "Questrial",sans-serif;
+}
+.contact .project-name{
+    color: white;
+    position: absolute;
+    margin-top: 295%;
+    margin-left: 18.5%;
+    font-size: 24px;
+    background: black;
+    border: 1px solid white;
+    padding: 13px 160px 10px 5px;
+    font-size: 18px;
+    font-family: "Questrial",sans-serif;
+}
+.contact .message{
+    color: white;
+    position: absolute;
+    margin-top: 298.5%;
+    margin-left: 18.5%;
+    font-size: 24px;
+    background: black;
+    border: 1px solid white;
+    padding: 5px 162px 200px 5px;
+    font-size: 18px;
+    font-family: "Questrial",sans-serif;
+}
+.contact input::placeholder{
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.contact textarea::placeholder{
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+}
