@@ -4,6 +4,12 @@
 
 *{
     background: black;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 html::-webkit-scrollbar{
     width: 1rem;
@@ -16,26 +22,90 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: #FF004D;
 }
-.nav ul{
+.nav .nav-menu{
     list-style: none;
     display: flex;
-    text-indent: 120px;
+    gap: 120px;
     font-size: 20px;
     font-family: "Syne", sans-serif;
     font-weight: bold;
-    margin-left: 17%;
+    justify-content: center;
 }
-.nav ul li a{
+
+.nav .nav-links{
+    background-color: transparent;
+}
+.nav .nav-menu a{
+    background-color: transparent;
     cursor: pointer;
     text-decoration: none;
     color: white;
+    transition: 0.7s ease;
 }
-.home img{
-    width: 400px;
-    height: 550px;
-    object-fit: contain;
-    margin-left: 20%;
-    margin-top: 50px;
+.nav .nav-menu a:hover{
+    color: #FF004D;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.home{
+    height: 55vh;
+    margin-top: 40%;
+}
+.container{
+    width: 50vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 35%;
+    overflow: hidden;
+    background: none;
+    border: 5px solid white;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+.wrapper img{
+    width: 100%;
+    object-fit: fill;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
 }
 .text1 h1{
     font-family: "Roboto Condensed", sans-serif;
@@ -46,6 +116,7 @@ html::-webkit-scrollbar-thumb{
 }
 .text1 .highlight{
     color: #FF004D;
+    transition: 0.7s ease;
 }
 .text1 .highlight:hover{
     color: #F8DE22;
@@ -60,30 +131,45 @@ html::-webkit-scrollbar-thumb{
     line-height: 160%;
     font-size: 18px;
 }
-.icon img{
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-}
-.icon img:hover{
-    background-color: #FF004D;
-    border-radius: 20px;
-}
 .icon{
-    margin-top: -0px;
-    object-fit: contain;
+    margin-top: 3%;
 }
-.icon .facebook{
-    margin-left: 900px;
+.facebook{
+    margin-left: 870px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    transition: 0.7s ease;
 }
-.icon .github{
-    margin-left: 40px;
+.facebook:hover{
+    color: #FF004D;
 }
-.icon .linkedin{
-    margin-left: 40px;
+.github{
+    position: absolute;
+    margin-left: 950px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    transition: 0.7s ease;
+}
+.github:hover{
+    color: #FF004D;
+}
+.linkedin{
+    position: absolute;
+    margin-left: 1025px;
+    font-size: 40px;
+    background-color: transparent;
+    color: white;
+    transition: 0.7s ease;
+}
+.linkedin:hover{
+    color: #FF004D;
 }
 .project{
     height: 150vh;
+    margin-top: 4%;
 }
 .project1 h2{
     color: white;
@@ -324,48 +410,51 @@ html::-webkit-scrollbar-thumb{
 }
 .skill .p1{
     position: absolute;
-    margin-top: 250%;
+    margin-top: 251%;
     margin-left: 34%;
 }
 .skill .p2{
     position: absolute;
-    margin-top: 250%;
+    margin-top: 251%;
     margin-left: 44%;
 }
 .skill .p3{
     position: absolute;
-    margin-top: 250%;
+    margin-top: 251%;
     margin-left: 54%;
 }
 .skill .p4{
     position: absolute;
-    margin-top: 250%;
+    margin-top: 251%;
     margin-left: 64%;
 }
 .skill .p5{
     position: absolute;
-    margin-top: 259%;
+    margin-top: 260%;
     margin-left: 39%;
 }
 .skill .p6{
     position: absolute;
-    margin-top: 259%;
+    margin-top: 260%;
     margin-left: 49%;
 }
 .skill .p7{
     position: absolute;
-    margin-top: 259%;
+    margin-top: 260%;
     margin-left: 59%;
 }
 .skill .p8{
     position: absolute;
-    margin-top: 268%;
+    margin-top: 269%;
     margin-left: 44%;
 }
 .skill .p9{
     position: absolute;
-    margin-top: 268%;
+    margin-top: 269%;
     margin-left: 54%;
+}
+.contact{
+    height: 650vh;
 }
 .contact h1{
     color: white;
@@ -377,65 +466,79 @@ html::-webkit-scrollbar-thumb{
     margin-left: 47%;
     background: transparent;
 }
-.contact{
-    height: 650vh;
-}
 .contact p{
     color: white;
     font-family: "Syne", sans-serif;
     font-size: 28px;
     position: absolute;
-    margin-top: 285%;
-    margin-left: 18%;
+    margin-top: 287%;
+    margin-left: 18.5%;
     background: transparent;
+    font-weight: 700;
 }
 .contact .fname{
     color: white;
     position: absolute;
-    margin-top: 288%;
+    margin-top: 289.5%;
     margin-left: 18.5%;
     font-size: 24px;
     background: black;
-    border: 1px solid white;
+    border: none;
+    border-bottom: 2px solid white;
     padding: 13px 160px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
+}
+.contact .fname:focus{
+    outline: none;
 }
 .contact .email{
     color: white;
     position: absolute;
-    margin-top: 291.5%;
+    margin-top: 293%;
     margin-left: 18.5%;
     font-size: 24px;
     background: black;
-    border: 1px solid white;
     padding: 13px 160px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.contact .email:focus{
+    outline: none;
 }
 .contact .project-name{
     color: white;
     position: absolute;
-    margin-top: 295%;
+    margin-top: 296.5%;
     margin-left: 18.5%;
     font-size: 24px;
     background: black;
-    border: 1px solid white;
+    border: none;
+    border-bottom: 2px solid white;;
     padding: 13px 160px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
 }
+.contact .project-name:focus{
+    outline: none;
+}
 .contact .message{
     color: white;
     position: absolute;
-    margin-top: 298.5%;
+    margin-top: 300.5%;
     margin-left: 18.5%;
     font-size: 24px;
     background: black;
-    border: 1px solid white;
-    padding: 5px 162px 200px 5px;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 5px 162px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
+}
+.contact .message:focus{
+    outline: none;
 }
 .contact input::placeholder{
     color: white;
@@ -447,3 +550,64 @@ html::-webkit-scrollbar-thumb{
     font-size: 18px;
     font-family: "Roboto Condensed", sans-serif;
 }
+.contact .send-button{
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 305.5%;
+    margin-left: 35%;
+    padding: 5px 45px 5px 20px;
+    position: absolute;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: url(/images/Icon/paper-plane.png);
+    background-position: 65px;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+.contact .send-button:hover{
+    background-color: #FF004D;
+}
+.contact .highlight{
+    color: #FF004D;
+}
+.contact .contact-info{
+    color: white;
+    font-family: "Syne", sans-serif;
+    font-size: 28px;
+    position: absolute;
+    margin-top: 287%;
+    margin-left: 60%;
+    background: transparent;
+    font-weight: 700;
+}
+.contact .info .email-account{
+    position: absolute;
+    margin-top: 290.5%;
+    margin-left: 61%;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+.contact .info .contact-no{
+    position: absolute;
+    margin-top: 294%;
+    margin-left: 61%;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+.info .highlight-text{
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.info .highlight-text:hover{
+    color: #FF004D;
+    text-decoration: underline #FF004D;
+}
+
+
+
+/*media queries*/
