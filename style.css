@@ -3,7 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 html, body{
     background: black;
@@ -24,9 +35,10 @@ nav{
     width: 100%;
 }
 nav ul{
-    float: right;
-    margin-right: 380px;
+    justify-content: center;
+    margin-left: -12%;
     text-indent: 120px;
+    margin-top: 20px;
 }
 nav ul li{
     display: inline-block;   
@@ -40,6 +52,9 @@ nav ul li a{
     font-weight: bold;
     gap: 120px;
 }
+nav ul li a:hover{
+    color: #FF004D;
+}
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -48,179 +63,11 @@ nav ul li a{
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    padding-left: 100%;
 }
 #check{
     display: none;
 }
-@media (max-width: 952px){
-    nav ul li a{
-        font-size: 19px;
-    }
-}
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        text-align: center;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 100;
-    }
-    nav ul li{
-        display: block;
-        line-height: 100px;
-    }
-    .nav ul li a{
-        font-size: 20px;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    .home .container{
-        width: 40vmin;
-        margin-top: -8%;
-        margin-left: 20%;
-    }
-    .home .text1{
-        margin-top: 110%;
-        margin-left: -70%;
-    }
-    .home .text1 p{
-        padding-right: 10%;
-
-    }
-    .home .icon{
-        margin-top: 10%;
-        margin-left: -75%;
-    }
-    .project .project1 h2{
-        margin-left: 42.3%;
-        margin-top: 15%;
-    }
-    .project .project1 h1{
-        margin-left: 8%;
-        margin-top: 22%;
-    }
-    .project .project1 p{
-        margin-top: 29%;
-        margin-left: 12.4%;
-    }
-    .project .project1 .p1{
-        margin-top: 70%;
-        margin-left: 13.5%;
-        width: 380px;
-        height: 262.64px;
-    }
-    .project .project1 .p2{
-        margin-top: 106%;
-        margin-left: 32.7%;
-        width: 380px;
-        height: 262.64px;
-    }
-    .project .project1 .p3{
-        width: 380px;
-        height: 262.64px;
-        margin-top: 142%;
-        margin-left: 13.5%;
-    }
-    .project .project1 .p4{
-        margin-top: 70%;
-        margin-left: 65%;
-        width: 134px;
-        height: 262.64px;
-    }
-    .project .project1 .p5{
-        margin-top: 106%;
-        margin-left: 13.5%;
-    }
-    .project .project1 .p6{
-        margin-top: 142%;
-        margin-left: 65%;
-    }
-    .project .project2 h1{
-        margin-top: 180%;
-        margin-left: 8%;
-    }
-    .project .project2 p{
-        margin-top: 187%;
-        margin-left: 12.4%;
-    }
-    .project .project2 h2{
-        margin-top: 218%;
-        margin-left: 42.3%;
-    }
-    .project .project2 .p1{
-        margin-top: 225%;
-        margin-left: 8%;
-        height: 262.64px;
-        width: 250px;
-    }
-    .project .project2 .p2{
-        width: 380px;
-        height: 262.64px;
-        margin-top: 229.8%;
-        margin-left: 44%;
-    }
-    .project .project2 .p3{
-        width: 380px;
-        height: 262.64px;
-        margin-left: 25.5%;
-    }
-    .project .project2 h3{
-        margin-left: 41.5%;
-    }
-    .project .project2 .p4{
-        width: 380px;
-        height: 262.64px;
-        margin-top: 11%;
-        margin-left: 6%;
-    }
-    .project .project2 .p5{
-        width: 380px;
-        height: 262.64px;
-        margin-top: 30%;
-        margin-left: -34%;
-    }
-    .project .project2 .p6{
-        width: 380px;
-        height: 262.64px;
-        margin-top: 49%;
-        margin-left: -15.5%;
-    }
-}
-
-
-
-/*.nav .nav-menu{
-    list-style: none;
-    display: flex;
-    gap: 120px;
-    font-size: 20px;
-    font-family: "Syne", sans-serif;
-    font-weight: bold;
-    justify-content: center;
-}
-
-.nav .nav-links{
-    background-color: transparent;
-}
-.nav .nav-menu a{
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    transition: 0.7s ease;
-}
-.nav .nav-menu a:hover{
-    color: #FF004D;
-}*/
 .home{
     margin-top: 40%;
 }
@@ -228,8 +75,8 @@ nav ul li a{
     width: 50vmin;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
-    left: 35%;
+    top: 55%;
+    left: 30%;
     overflow: hidden;
     background: none;
     border: 5px solid white;
@@ -274,7 +121,7 @@ nav ul li a{
     font-size: 64px;
     color: white;
     margin-top: -30%;
-    margin-left: 50%; 
+    margin-left: 35%; 
 }
 .text1 .highlight{
     color: #FF004D;
@@ -286,18 +133,18 @@ nav ul li a{
 .text1 p{
     font-family: "Questrial", sans-serif;
     color: white;
-    padding-right: 18%;
-    margin-left: 50.5%;
-    margin-top: -2.5%;
+    padding-right: 23%;
+    margin-left: 35.5%;
+    margin-top: -0.5%;
     text-align: justify;
     line-height: 160%;
     font-size: 18px;
 }
 .icon{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .facebook{
-    margin-left: 870px;
+    margin-left: 595px;
     font-size: 40px;
     background-color: transparent;
     color: white;
@@ -309,7 +156,7 @@ nav ul li a{
 }
 .github{
     position: absolute;
-    margin-left: 950px;
+    margin-left: 675px;
     font-size: 40px;
     background-color: transparent;
     color: white;
@@ -320,7 +167,7 @@ nav ul li a{
 }
 .linkedin{
     position: absolute;
-    margin-left: 1025px;
+    margin-left: 750px;
     font-size: 40px;
     background-color: transparent;
     color: white;
@@ -338,7 +185,7 @@ nav ul li a{
     font-family: "Roboto Condensed", sans-serif;
     font-size: 40px;
     margin-top: 10%;
-    margin-left: 48%;
+    margin-left: 25%;
     position: absolute;
 }
 .project1 h1{
@@ -347,7 +194,7 @@ nav ul li a{
     font-size: 40px;
     font-weight: bold;
     margin-top: 15%;
-    margin-left: 21%;
+    margin-left: -2%;
     position: absolute;
 }
 .project1 img{
@@ -359,10 +206,10 @@ nav ul li a{
     font-family: "Questrial", sans-serif;
     line-height: 160%;
     font-size: 18px;
-    padding-right: 14%;
+    padding-right: 15%;padding-right: 15%;
     position: absolute;
     margin-top: 19%;
-    margin-left: 23%;
+    margin-left: 0%;
     text-align: justify;
 }
 .project1 .p1{
@@ -370,7 +217,7 @@ nav ul li a{
     height: 262.64px;
     position: absolute;
     margin-top: 32%;
-    margin-left: 25%;
+    margin-left: 5%;
     background: transparent;
 }
 .project1 .p2{
@@ -378,14 +225,14 @@ nav ul li a{
     height: 262.64px;
     position: absolute;
     margin-top: 50.5%;
-    margin-left: 39.5%;
+    margin-left: 15%;
     background: transparent;
 }
 .project1 .p3{
     width: 578px;
     height: 262.64px;
     position: absolute;
-    margin-left: 25%;
+    margin-left: 5%;
     margin-top: 69%;
     background: transparent;
 }
@@ -395,14 +242,14 @@ nav ul li a{
     position: absolute;
     margin-top: 32%;
     object-fit: contain;
-    margin-left: 64.5%;
+    margin-left: 44%;
     background: transparent;
 }
 .project1 .p5{
     width: 134px;
     height: 262.64px;
     position: absolute;
-    margin-left: 29.2%;
+    margin-left: 5%;
     object-fit: contain;
     margin-top: 50.5%;
     background: transparent;
@@ -411,7 +258,7 @@ nav ul li a{
     width: 134px;
     height: 262.64px;
     position: absolute;
-    margin-left: 64.5%;
+    margin-left: 44%;
     margin-top: 69%;
     object-fit: contain;
     background: transparent;
@@ -420,7 +267,7 @@ nav ul li a{
     color: white;
     position: absolute;
     margin-top: 90%;
-    margin-left: 21%;
+    margin-left: -2%;
     font-family: "Syne", sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -429,12 +276,12 @@ nav ul li a{
 .project2 p{
     color: white;
     position: absolute;
-    margin-left: 23%;
+    margin-left: 0%;
     margin-top: 94%;
     font-family: "Questrial", sans-serif;
     line-height: 160%;
     font-size: 18px;
-    padding-right: 14%;
+    padding-right: 15%;
     text-align: justify;
 }
 .project2 h2{
@@ -444,7 +291,7 @@ nav ul li a{
     font-weight: bold;
     font-size: 32px;
     margin-top: 106%;
-    margin-left: 45%;
+    margin-left: 25%;
 }
 .project2 img{
     border-radius: 10px;
@@ -452,22 +299,22 @@ nav ul li a{
 }
 .project2 .p1{
     width: 275px;
-    height: 310px;
+    height: 350px;
     position: absolute;
     margin-top: 111%;
-    margin-left: 25.5%;
+    margin-left: 5%;
 }
 .project2 .p2{
     width: 590px;
     height: 350px;
-    margin-top: 111%;
-    margin-left: 46%;
+    margin-top: 139%;
+    margin-left: 30.5%;
 }
 .project2 .p3{
     width: 590px;
     height: 350px;
     margin-top: 1.5%;
-    margin-left: 36%;
+    margin-left: 18.5%;
 }
 .project2 h3{
     color: #FF004D;
@@ -475,27 +322,28 @@ nav ul li a{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     font-size: 32px;
-    margin-left: 44%;
+    margin-left: 25%;
+    margin-top: 3%;
 }
 .project2 .p4{
     width: 590px;
     height: 350px;
-    margin-top: 6%;
-    margin-left: 20%;
+    margin-top: 9.5%;
+    margin-left: 5%;
 }
 .project2 .p5{
     position: absolute;
     width: 590px;
     height: 350px;
-    margin-top: 18%;
+    margin-top: 21%;
     margin-left: -25%;
 }
 .project2 .p6{
     width: 590px;
     height: 350px;
     position: absolute;
-    margin-top: 30%;
-    margin-left: -10%;
+    margin-top: 34.5%;
+    margin-left: -11.5%;
 }
 .project3 h1{
     color: #F8DE22;
@@ -504,7 +352,7 @@ nav ul li a{
     font-weight: bold;
     font-family: "Syne", sans-serif;
     margin-top: 27%;
-    margin-left: 21%;
+    margin-left: -2%;
 }
 .project3 p{
     color: white;
@@ -512,10 +360,10 @@ nav ul li a{
     font-family: "Questrial", sans-serif;
     line-height: 160%;
     font-size: 18px;
-    padding-right: 14%;
+    padding-right: 15%;
     text-align: justify;
     margin-top: 31.5%;
-    margin-left: 23%;
+    margin-left: 0%;
     background: transparent;
 }
 .project3 img{
@@ -527,35 +375,35 @@ nav ul li a{
     height: 290px;
     position: absolute;
     margin-top: 40%;
-    margin-left: 23%;
+    margin-left: 5%;
 }
 .project3 .p2{
     width: 597px;
     height: 290px;
     position: absolute;
-    margin-top: 56%;
-    margin-left: 45%;
+    margin-top: 55.5%;
+    margin-left: 24%;
 }
 .project3 .p3{
     width: 597px;
     height: 290px;
     position: absolute;
-    margin-top: 73%;
-    margin-left: 23%;
+    margin-top: 71%;
+    margin-left: 5%;
 }
 .project3 .p4{
     width: 597px;
     height: 290px;
     position: absolute;
-    margin-top: 90%;
-    margin-left: 45%;
+    margin-top: 86%;
+    margin-left: 24%;
 }
 .project3 .p5{
     width: 597px;
     height: 290px;
     position: absolute;
-    margin-top: 107%;
-    margin-left: 23%;
+    margin-top: 101%;
+    margin-left: 5%;
 }
 .skill h1{
     color: white;
@@ -564,7 +412,7 @@ nav ul li a{
     font-size: 40px;
     position: absolute;
     margin-top: 245%;
-    margin-left: 48%;
+    margin-left: 25%;
 }
 .skill img{
     width: 90px;
@@ -573,50 +421,50 @@ nav ul li a{
 .skill .p1{
     position: absolute;
     margin-top: 251%;
-    margin-left: 34%;
+    margin-left: 11%;
 }
 .skill .p2{
     position: absolute;
     margin-top: 251%;
-    margin-left: 44%;
+    margin-left: 21%;
 }
 .skill .p3{
     position: absolute;
     margin-top: 251%;
-    margin-left: 54%;
+    margin-left: 31%;
 }
 .skill .p4{
     position: absolute;
     margin-top: 251%;
-    margin-left: 64%;
+    margin-left: 41%;
 }
 .skill .p5{
     position: absolute;
     margin-top: 260%;
-    margin-left: 39%;
+    margin-left: 15.5%;
 }
 .skill .p6{
     position: absolute;
     margin-top: 260%;
-    margin-left: 49%;
+    margin-left: 25.5%;
 }
 .skill .p7{
     position: absolute;
     margin-top: 260%;
-    margin-left: 59%;
+    margin-left: 35.5%;
 }
 .skill .p8{
     position: absolute;
     margin-top: 269%;
-    margin-left: 44%;
+    margin-left: 21%;
 }
 .skill .p9{
     position: absolute;
     margin-top: 269%;
-    margin-left: 54%;
+    margin-left: 31%;
 }
 .contact{
-    height: 650vh;
+    height: 370vh;
 }
 .contact h1{
     color: white;
@@ -625,7 +473,7 @@ nav ul li a{
     font-size: 40px;
     position: absolute;
     margin-top: 280%;
-    margin-left: 47%;
+    margin-left: 25%;
     background: transparent;
 }
 .contact p{
@@ -634,7 +482,7 @@ nav ul li a{
     font-size: 28px;
     position: absolute;
     margin-top: 287%;
-    margin-left: 18.5%;
+    margin-left: -2%;
     background: transparent;
     font-weight: 700;
 }
@@ -642,12 +490,12 @@ nav ul li a{
     color: white;
     position: absolute;
     margin-top: 289.5%;
-    margin-left: 18.5%;
+    margin-left: -2%;
     font-size: 24px;
     background: black;
     border: none;
     border-bottom: 2px solid white;
-    padding: 13px 160px 10px 5px;
+    padding: 13px 90px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
 }
@@ -658,10 +506,10 @@ nav ul li a{
     color: white;
     position: absolute;
     margin-top: 293%;
-    margin-left: 18.5%;
+    margin-left: -2%;
     font-size: 24px;
     background: black;
-    padding: 13px 160px 10px 5px;
+    padding: 13px 90px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
     border: none;
@@ -674,12 +522,12 @@ nav ul li a{
     color: white;
     position: absolute;
     margin-top: 296.5%;
-    margin-left: 18.5%;
+    margin-left: -2%;
     font-size: 24px;
     background: black;
     border: none;
     border-bottom: 2px solid white;;
-    padding: 13px 160px 10px 5px;
+    padding: 13px 90px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
 }
@@ -690,12 +538,12 @@ nav ul li a{
     color: white;
     position: absolute;
     margin-top: 300.5%;
-    margin-left: 18.5%;
+    margin-left: -2%;
     font-size: 24px;
     background: black;
     border: none;
     border-bottom: 2px solid white;
-    padding: 5px 162px 10px 5px;
+    padding: 5px 90px 10px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
 }
@@ -717,7 +565,7 @@ nav ul li a{
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 305.5%;
-    margin-left: 35%;
+    margin-left: 9.9%;
     padding: 5px 45px 5px 20px;
     position: absolute;
     font-size: 18px;
@@ -726,6 +574,7 @@ nav ul li a{
     background-position: 65px;
     background-repeat: no-repeat;
     background-size: 15%;
+    background-color: black;
 }
 .contact .send-button:hover{
     background-color: #FF004D;
@@ -739,14 +588,14 @@ nav ul li a{
     font-size: 28px;
     position: absolute;
     margin-top: 287%;
-    margin-left: 60%;
+    margin-left: 45%;
     background: transparent;
     font-weight: 700;
 }
 .contact .info .email-account{
     position: absolute;
     margin-top: 290.5%;
-    margin-left: 61%;
+    margin-left: 45%;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 22px;
@@ -755,7 +604,7 @@ nav ul li a{
 .contact .info .contact-no{
     position: absolute;
     margin-top: 294%;
-    margin-left: 61%;
+    margin-left: 45%;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 22px;
@@ -773,3 +622,361 @@ nav ul li a{
 
 
 /*media queries*/
+@media (max-width:2183px){
+    
+    html{
+        font-size: 55%;
+        padding-left: 35rem;
+    }
+}
+
+@media (max-width:1281px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:1025px){
+
+    #menu{
+        display: block;
+    }
+    html{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media (max-width:395px){
+    .checkbtn{
+        display: block;
+        margin-left: -18%;
+        position: fixed;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        padding-right: 20px;
+    }
+    ul{
+        position: fixed;
+        width: 115%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        top: 60px;
+        left: -106%;
+        transition: all .5s;
+        z-index: 100;
+        margin: 0 auto;
+    }
+    nav ul li{
+        display: block;
+        line-height: 100px;
+        margin-left: -20%;
+        text-align: center;
+    }
+    .nav ul li a{
+        font-size: 28px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .home .container{
+        width: 80vmin;
+        margin-top: -15%;
+        margin-left: 20%;
+    }
+    .home .text1{
+        margin-top: 185%;
+    }
+    .home .text1 h1{
+        font-size: 50px;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .home .text1 p{
+        margin-top: 4%;
+        font-size: 14px;
+        margin-left: 12%;
+        padding-right: 25px;
+
+    }
+    .home .icon{
+        margin-top: 10%;
+        margin-left: -153%;
+    }
+    .home .facebook{
+        font-size: 35px;
+    }
+    .home .github{
+        font-size: 35px;
+    }
+    .home .linkedin{
+        font-size: 35px;
+    }
+    .project .project1 h2{
+        margin-left: 25%;
+        margin-top: 25%;
+    }
+    .project .project1 h1{
+        margin-left: 2%;
+        margin-top: 38%;
+        font-size: 35px;
+    }
+    .project .project1 p{
+        font-size: 14px;
+        margin-top: 50%;
+        margin-left: 10%;
+        padding-right: 10%;
+    }
+    .project .project1 .p1{
+        margin-top: 140%;
+        margin-left: 13.5%;
+        width: 200px;
+        height: 100px;
+    }
+    .project .project1 .p2{
+        margin-top: 168%;
+        margin-left: 28%;
+        width: 200px;
+        height: 100px;
+    }
+    .project .project1 .p3{
+        margin-top: 195.5%;
+        margin-left: 13.5%;
+        width: 200px;
+        height: 100px;
+    }
+    .project .project1 .p4{
+        margin-top: 140%;
+        margin-left: 67%;
+        width: 50px;
+        height: 100px;
+    }
+    .project .project1 .p5{
+        margin-top: 168%;
+        margin-left: 13.5%;
+        width: 50px;
+        height: 100px;
+    }
+    .project .project1 .p6{
+        margin-top: 195.5%;
+        margin-left: 67%;
+        width: 50px;
+        height: 100px;
+    }
+    .project .project2 h1{
+        margin-top: 225%;
+        margin-left: 2%;
+        font-size: 35px;
+    }
+    .project .project2 p{
+        margin-top: 237%;
+        margin-left: 10%;
+        padding-right: 10%;
+        font-size: 14px;
+    }
+    .project .project2 h2{
+        margin-top: 310%;
+        margin-left: 25%;
+    }
+    .project .project2 .p1{
+        margin-top: 323%;
+        margin-left: 5%;
+        height: 150px;
+        width: 120px;
+    }
+    .project .project2 .p2{
+        margin-top: 368.8%;
+        margin-left: 44%;
+        width: 200px;
+        height: 150px;
+    }
+    .project .project2 .p3{
+        width: 380px;
+        height: 262.64px;
+        margin-left: 25.5%;
+        width: 200px;
+        height: 150px;width: 200px;
+        height: 150px;
+    }
+    .project .project2 h3{
+        margin-left: 25%;
+    }
+    .project .project2 .p4{
+        width: 200px;
+        height: 150px;
+        margin-top: 18%;
+        margin-left: 2%;
+    }
+    .project .project2 .p5{
+        width: 200px;
+        height: 150px;
+        margin-top: 36%;
+        margin-left: -36%;
+    }
+    .project .project2 .p6{
+        width: 200px;
+        height: 150px;
+        margin-top: 56%;
+        margin-left: -20%;
+    }
+    .project .project3 h1{
+        margin-top: 45%;
+        margin-left: 2%;
+        font-size: 35px;
+    }
+    .project .project3 p{
+        margin-top: 58%;
+        margin-left: 10%;
+        padding-right: 10%;
+        font-size: 14px;
+    }
+    .project .project3 .p1{
+        margin-top: 102%;
+        margin-left: 13.5%;
+        width: 200px;
+        height: 100px;
+    }
+    .project .project3 .p2{
+        width: 200px;
+        height: 100px;
+        margin-top: 123%;
+        margin-left: 34%;
+    }
+    .project .project3 .p3{
+        width: 200px;
+        height: 100px;
+        margin-top: 144%;
+        margin-left: 13.5%;
+    }
+    .project .project3 .p4{
+        width: 200px;
+        height: 100px;
+        margin-top: 165%;
+        margin-left: 34%;
+    }
+    .project .project3 .p5{
+        width: 200px;
+        height: 100px;
+        margin-top: 186%;
+        margin-left: 13.5%;
+    }
+    .skill{
+        margin-top: 205%;
+    }
+    .skill .img-skill h1{
+        margin-left: 32%;
+    }
+    .skill .img-skill img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    .skill .img-skill .p1{
+        position: absolute;
+        margin-top: 262%;
+        margin-left: 15%;
+    }
+    .skill .img-skill .p2{
+        position: absolute;
+        margin-top: 262%;
+        margin-left: 32%;
+    }
+    .skill .img-skill .p3{
+        position: absolute;
+        margin-top: 262%;
+        margin-left: 49%;
+    }
+    .skill .img-skill .p4{
+        position: absolute;
+        margin-top: 262%;
+        margin-left: 66%;
+    }
+    .skill .img-skill .p5{
+        position: absolute;
+        margin-top: 282%;
+        margin-left: 23%;
+    }
+    .skill .img-skill .p6{
+        position: absolute;
+        margin-top: 282%;
+        margin-left: 40%;
+    }
+    .skill .img-skill .p7{
+        position: absolute;
+        margin-top: 282%;
+        margin-left: 58%;
+    }
+    .skill .img-skill .p8{
+        position: absolute;
+        margin-top: 302%;
+        margin-left: 32%;
+    }
+    .skill .img-skill .p9{
+        position: absolute;
+        margin-top: 302%;
+        margin-left: 49%;
+    }
+    .contact h1{
+        top: 435%;
+        left: 8.5%;
+    }
+    .contact p{
+        top: 442%;
+        left: 8%;
+        font-size: 18px;
+    }
+    .contact .fname{
+        top: 448%;
+        left: 8%;
+        font-size: 14px;
+        padding: 13px 18px 10px 5px;
+    }
+    .contact .email{
+        top: 452%;
+        left: 8%;
+        font-size: 14px;
+        padding: 13px 18px 10px 5px;
+    }
+    .contact .project-name{
+        top: 456%;
+        left: 8%;
+        font-size: 14px;
+        padding: 13px 18px 10px 5px;
+    }
+    .contact .message{
+        top: 460%;
+        left: 8%;
+        font-size: 14px;
+        padding: 13px 18px 10px 5px;
+    }
+    .contact .contact-info{
+        font-size: 18px;
+        left: 15%;
+    }
+    .contact .info .email-account{
+        top: 448%;
+        left: 15%;
+        font-size: 14px;
+    }
+    .contact .info .contact-no{
+        top: 452%;
+        left: 15%;
+        font-size: 14px;
+    }
+    .contact .send-button{
+        top: 467%;
+        left: 25%;
+        font-size: 14px;
+        padding: 5px 25px 5px 5px;
+        background-position: 40px;
+        background-size: 14px;
+    }
+    .contact input::placeholder{
+        font-size: 14px;
+    }
+    .contact textarea::placeholder{
+        font-size: 14px;
+    }
+}
+}
+@media (max-width:376px){
+
+}
