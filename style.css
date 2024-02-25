@@ -577,7 +577,7 @@ nav ul li a:hover{
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 305.5%;
-    margin-left: 9.9%;
+    margin-left: -2%;
     padding: 5px 45px 5px 20px;
     position: absolute;
     font-size: 18px;
@@ -630,7 +630,37 @@ nav ul li a:hover{
     color: #FF004D;
     text-decoration: underline #FF004D;
 }
-
+.contact .msg{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin-top: 306%;
+    margin-left: 6%;
+}
+.msg .success{
+    color: #F8DE22;
+    animation: buttons .3s linear;
+    display: none;
+}
+.msg .danger{
+    color: red;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 
 

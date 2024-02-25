@@ -6,7 +6,6 @@
     <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <title>Portfolio</title>
@@ -105,17 +104,23 @@
     <div id="contact-page" class="contact">
         <h1 data-aos="flip-left" data-aos-duration="3000" data-aos-once="true">CONTACT</h1>
         <p data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">Contact <span class="highlight">Form</span></p>
-        <input type="text" placeholder="Full Name:" class="fname" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
-        <input type="email" placeholder="Email:" class="email" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
-        <input type="text" placeholder="Project:" class="project-name" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
-        <textarea class="message" placeholder="Message:" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true"></textarea>
-        <input class="send-button" type="button" value="SEND" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+        <input type="text" placeholder="Full Name:" class="fname" id="name" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+        <input type="email" placeholder="Email:" class="email" id="email" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+        <input type="text" placeholder="Project:" class="project-name" id="project" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+        <textarea class="message" id="msg" placeholder="Message:" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true"></textarea>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><button class="send-button" id="send" onclick="message()" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">SEND</button></a>
+        <div class="msg">
+            <div class="success" id="success">Oops! Button not working.</div>
+            <div class="danger" id="danger">Fields can't be empty!</div>
+        </div>
         <p class="contact-info" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">Contact <span class="highlight">Info</span></p1>
         <div class="info">
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><p class="email-account" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">Email: <span class="highlight-text">jmncls08@gmail.com</span></p></a>
             <p class="contact-no" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">Contact No: <span class="highlight-text">0997-452-6819</span></p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 
     <script type="text/javascript">
         var lastScrollTop = 0;
