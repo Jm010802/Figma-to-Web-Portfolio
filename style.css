@@ -37,9 +37,10 @@ nav{
     z-index: 1;
     backdrop-filter: blur(10px);
     margin-left: -20%;
-    text-align: center;
+    margin-top: -12%;
 }
 nav ul{
+    text-align: center;
     justify-content: center;
     margin-left: -12%;
     text-indent: 120px;
@@ -913,6 +914,7 @@ nav ul li a:hover{
     }
     nav{
         margin-left: 0%;
+        margin-top: -48%;
     }
     nav ul{
         position: fixed;
