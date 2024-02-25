@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb{
 }
 .nav{
     position: fixed;
-    height: 80px;
+    height: 40px;
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(10px);
@@ -46,7 +46,7 @@ nav ul{
     margin-top: 20px;
 }
 nav ul li{
-    display: inline-block;   
+    display: inline-block;
 }
 nav ul li a{
     list-style: none;
@@ -69,6 +69,8 @@ nav ul li a:hover{
     cursor: pointer;
     display: none;
     padding-left: 100%;
+    margin-top: -160%;
+    width: 430px;
 }
 #check{
     display: none;
@@ -894,23 +896,22 @@ nav ul li a:hover{
         z-index: 1;
         padding-right: 20px;
     }
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
         background: black;
-        top: 60px;
         left: -120%;
         transition: all .5s;
-    }
-    nav ul{
-        margin-left: 0;
+        margin-top: -138.8%;
+        z-index: 1;
+        margin-left: 2%;
     }
     nav ul li{
         display: block;
         line-height: 100px;
         text-align: center;
-        margin-left: -35%;
+        margin-left: -32%;
     }
     .nav ul li a{
         font-size: 28px;
@@ -1157,34 +1158,34 @@ nav ul li a:hover{
         height: 230vh;
     }
     .contact h1{
-        top: 405%;
+        top: 415%;
         left: 6.5%;
     }
     .contact p{
-        top: 410%;
+        top: 420%;
         left: 8%;
         font-size: 18px;
     }
     .contact .fname{
-        top: 412%;
+        top: 423%;
         left: 8%;
         font-size: 14px;
         padding: 13px 18px 10px 5px;
     }
     .contact .email{
-        top: 416%;
+        top: 428%;
         left: 8%;
         font-size: 14px;
         padding: 13px 18px 10px 5px;
     }
     .contact .project-name{
-        top: 420%;
+        top: 433%;
         left: 8%;
         font-size: 14px;
         padding: 13px 18px 10px 5px;
     }
     .contact .message{
-        top: 424%;
+        top: 438%;
         left: 8%;
         font-size: 14px;
         padding: 13px 18px 10px 5px;
@@ -1194,17 +1195,17 @@ nav ul li a:hover{
         left: 15%;
     }
     .contact .info .email-account{
-        top: 412%;
+        top: 423%;
         left: 15%;
         font-size: 14px;
     }
     .contact .info .contact-no{
-        top: 416%;
+        top: 428%;
         left: 15%;
         font-size: 14px;
     }
     .contact .send-button{
-        top: 431%;
+        top: 445%;
         left: 20%;
         font-size: 14px;
         padding: 5px 35px 5px 18px;
