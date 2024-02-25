@@ -895,8 +895,7 @@ nav ul li a:hover{
         margin-left: -18%;
         position: fixed;
         backdrop-filter: blur(10px);
-        z-index: 1;
-        padding-right: 20px;
+        z-index: 1;    
     }
     ul{
         position: fixed;
@@ -906,7 +905,6 @@ nav ul li a:hover{
         top: 60px;
         left: -120%;
         transition: all .5s;
-        z-index: ;
     }
     nav ul li{
         display: block;
