@@ -13,7 +13,7 @@
 </head>
 <body>
     <!--navbar-->
-    <nav>
+    <nav id="nav-bar">
         <input type="checkbox" id="check">
         <label for ="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -116,6 +116,21 @@
             <p class="contact-no" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">Contact No: <span class="highlight-text">0997-452-6819</span></p>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        navbar = document.getElementById("nav-bar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop){
+                navbar.style.top="-80px";
+            }else {
+                navbar.style.top="0";
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
