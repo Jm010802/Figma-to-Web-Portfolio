@@ -1005,6 +1005,10 @@ nav ul li a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    .home .home-link{
+        margin-top: -158%;
+        margin-left: 50%;
+    }
     .home .container{
         width: 80vmin;
         margin-top: -15%;
@@ -1017,6 +1021,7 @@ nav ul li a:hover{
         font-size: 50px;
         text-align: center;
         margin-left: 5%;
+        white-space: wrap;
     }
     .home .text1 p{
         margin-top: 4%;
