@@ -25,5 +25,4 @@ function message(){
         danger.style.display = 'none';
         success.style.display = 'none';
     }, 4000);
-
 }

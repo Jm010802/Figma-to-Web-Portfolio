@@ -80,6 +80,14 @@ nav ul li a:hover{
     height: 55vh;
     margin-top: 40%;
 }
+.home .home-link{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 28%;
+    opacity: 0;
+}
 .container{
     width: 50vmin;
     position: absolute;
@@ -130,7 +138,18 @@ nav ul li a:hover{
     font-size: 64px;
     color: white;
     margin-top: -25%;
-    margin-left: 32%; 
+    margin-left: 32%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 8s;
+}
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
 }
 .text1 .highlight{
     color: #FF004D;
@@ -155,10 +174,10 @@ nav ul li a:hover{
 .facebook{
     margin-left: 555px;
     font-size: 40px;
-    background-color: transparent;
     color: white;
     position: absolute;
     transition: 0.7s ease;
+    border: none;
 }
 .facebook:hover{
     color: #FF004D;
@@ -324,9 +343,9 @@ nav ul li a:hover{
 .project2 .p1{
     width: 275px;
     height: 350px;
-    position: absolute;
     margin-top: 111%;
     margin-left: 5%;
+    position: absolute;
 }
 .project2 .p2{
     width: 590px;
@@ -440,6 +459,7 @@ nav ul li a:hover{
 }
 .skill{
     margin-top: 5%;
+    margin-bottom: 22%;
 }
 .skill img{
     width: 90px;
@@ -447,51 +467,52 @@ nav ul li a:hover{
 }
 .skill .p1{
     position: absolute;
-    margin-top: 251%;
+    margin-top: 258%;
     margin-left: 11%;
 }
 .skill .p2{
     position: absolute;
-    margin-top: 251%;
+    margin-top: 258%;
     margin-left: 21%;
 }
 .skill .p3{
     position: absolute;
-    margin-top: 251%;
+    margin-top: 258%;
     margin-left: 31%;
 }
 .skill .p4{
     position: absolute;
-    margin-top: 251%;
+    margin-top: 258%;
     margin-left: 41%;
 }
 .skill .p5{
     position: absolute;
-    margin-top: 260%;
+    margin-top: 267%;
     margin-left: 15.5%;
 }
 .skill .p6{
     position: absolute;
-    margin-top: 260%;
+    margin-top: 267%;
     margin-left: 25.5%;
 }
 .skill .p7{
     position: absolute;
-    margin-top: 260%;
+    margin-top: 267%;
     margin-left: 35.5%;
 }
 .skill .p8{
     position: absolute;
-    margin-top: 269%;
+    margin-top: 276%;
     margin-left: 21%;
 }
 .skill .p9{
     position: absolute;
-    margin-top: 269%;
+    margin-top: 276%;
     margin-left: 31%;
 }
 .contact{
-    height: 650vh;
+    height: 620vh;
+    margin-top: 25%;
 }
 .contact h1{
     color: white;
@@ -499,7 +520,7 @@ nav ul li a:hover{
     font-weight: bold;
     font-size: 40px;
     position: absolute;
-    margin-top: 280%;
+    margin-top: 270%;
     margin-left: 23.8%;
     background: transparent;
 }
@@ -508,7 +529,7 @@ nav ul li a:hover{
     font-family: "Syne", sans-serif;
     font-size: 28px;
     position: absolute;
-    margin-top: 287%;
+    margin-top: 277%;
     margin-left: -2%;
     background: transparent;
     font-weight: 700;
@@ -516,7 +537,7 @@ nav ul li a:hover{
 .contact .fname{
     color: white;
     position: absolute;
-    margin-top: 289.5%;
+    margin-top: 279.5%;
     margin-left: -2%;
     font-size: 24px;
     background: black;
@@ -532,7 +553,7 @@ nav ul li a:hover{
 .contact .email{
     color: white;
     position: absolute;
-    margin-top: 293%;
+    margin-top: 283%;
     margin-left: -2%;
     font-size: 24px;
     background: black;
@@ -548,7 +569,7 @@ nav ul li a:hover{
 .contact .project-name{
     color: white;
     position: absolute;
-    margin-top: 296.5%;
+    margin-top: 286.5%;
     margin-left: -2%;
     font-size: 24px;
     background: black;
@@ -564,7 +585,7 @@ nav ul li a:hover{
 .contact .message{
     color: white;
     position: absolute;
-    margin-top: 300.5%;
+    margin-top: 290.5%;
     margin-left: -2%;
     font-size: 24px;
     background: black;
@@ -591,7 +612,7 @@ nav ul li a:hover{
     color: white;
     border: 2px solid white;
     border-radius: 10px;
-    margin-top: 308%;
+    margin-top: 298%;
     margin-left: -2%;
     padding: 5px 45px 5px 20px;
     position: absolute;
@@ -614,14 +635,14 @@ nav ul li a:hover{
     font-family: "Syne", sans-serif;
     font-size: 28px;
     position: absolute;
-    margin-top: 287%;
+    margin-top: 277%;
     margin-left: 45%;
     background: transparent;
     font-weight: 700;
 }
 .contact .info .email-account{
     position: absolute;
-    margin-top: 290.5%;
+    margin-top: 280.5%;
     margin-left: 45%;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
@@ -630,7 +651,7 @@ nav ul li a:hover{
 }
 .contact .info .contact-no{
     position: absolute;
-    margin-top: 294%;
+    margin-top: 284%;
     margin-left: 45%;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
