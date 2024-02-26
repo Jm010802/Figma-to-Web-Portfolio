@@ -272,6 +272,21 @@ nav ul li a:hover{
     object-fit: contain;
     background: transparent;
 }
+.project1 .view-site2{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 87.5%;
+    margin-left: 26%;
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.project1 .view-site2:hover{
+    background-color: #FF004D;
+}
 .project2 h1{
     color: white;
     position: absolute;
@@ -476,7 +491,7 @@ nav ul li a:hover{
     margin-left: 31%;
 }
 .contact{
-    height: 610vh;
+    height: 650vh;
 }
 .contact h1{
     color: white;
@@ -555,7 +570,7 @@ nav ul li a:hover{
     background: black;
     border: none;
     border-bottom: 2px solid white;
-    padding: 5px 90px 10px 5px;
+    padding: 5px 90px 50px 5px;
     font-size: 18px;
     font-family: "Questrial",sans-serif;
 }
@@ -576,7 +591,7 @@ nav ul li a:hover{
     color: white;
     border: 2px solid white;
     border-radius: 10px;
-    margin-top: 305.5%;
+    margin-top: 308%;
     margin-left: -2%;
     padding: 5px 45px 5px 20px;
     position: absolute;
