@@ -89,14 +89,16 @@ nav ul li a:hover{
     opacity: 0;
 }
 .container{
-    width: 50vmin;
+    height: 50%;
+    width: 24%;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 55%;
+    top: 45%;
     left: 30%;
     overflow: hidden;
     background: none;
-    border: 5px solid white;
+    border: 5px solid black;
+    border-radius: 50%;
 }
 .wrapper{
     width: 100%;
@@ -105,7 +107,8 @@ nav ul li a:hover{
 }
 .wrapper img{
     width: 100%;
-    object-fit: fill;
+    margin-top: -16%;
+    object-fit: contain;
 }
 @keyframes slide {
     0%{
@@ -679,12 +682,16 @@ nav ul li a:hover{
     color: #F8DE22;
     animation: buttons .3s linear;
     display: none;
+    position: relative;
+    margin-top: -7.7%;
 }
 .msg .danger{
     color: red;
     transition: .3s;
     animation: buttons .3s linear;
     display: none;
+    position: relative;
+    margin-top: -7.7%;
 }
 @keyframes buttons{
     0%{
@@ -728,8 +735,13 @@ nav ul li a:hover{
         font-size: 50%;
         padding-left: 0rem;
     }
+    nav{
+        margin-top: -14.4%;
+        width: 120%;
+    }
     nav ul{
-        margin-left: 5%;
+        margin-left: 8%;
+        margin-top: 1%;
     }
     nav ul li a{
         gap: 150px;
@@ -924,46 +936,56 @@ nav ul li a:hover{
         margin-left: 52%;
     }
     .contact{
-        height: 530vh;
+        height: 540vh;
     }
     .contact h1{
-        top: 335%;
-        left: 18.5%;
+        top: 350%;
+        left: 19.5%;
     }
     .contact p{
-        top: 332%;
+        top: 348%;
         left: 20%;
     }
     .contact .fname{
-        top: 332%;
+        top: 349%;
         left: 20.5%;
     }
     .contact .email{
-        top: 332%;
+        top: 351%;
         left: 20.5%;
     }
     .contact .project-name{
-        top: 332%;
+        top: 353%;
         left: 20.5%;
     }
     .contact .message{
-        top: 332%;
+        top: 355%;
         left: 20.5%;
     }
     .contact .contact-info{
-        left: 15%;
+        left: 20%;
     }
     .contact .info .email-account{
-        top: 332%;
-        left: 15.5%;
+        top: 349%;
+        left: 20.5%;
     }
     .contact .info .contact-no{
-        top: 332%;
-        left: 15.5%;
+        top: 351%;
+        left: 20.5%;
     }
     .contact .send-button{
-        top: 332.5%;
-        left: 23%;
+        top: 357%;
+        left: 20.5%;
+    }
+    .msg .success{
+        position: absolute;
+        margin-top: 14.8%;
+        left: 22%;
+    }
+    .msg .danger{
+        position: absolute;
+        margin-top: 14.8%;
+        left: 22%;
     }
 }
 @media (max-width:1025px){
